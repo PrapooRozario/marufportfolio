@@ -8,6 +8,43 @@
   font-style: normal;
 }
 
+.container {
+    width: 100%;
+    @media (width < 40rem) {
+        max-width: 40rem;
+        padding:  15px 1.5rem 0 1.5rem;
+    }
+    /* Small screens (640px+) */
+    @media (width >= 40rem) {
+        max-width: 40rem;
+        padding:  15px 1.5rem 0 1.5rem;
+    }
+    
+    /* Medium screens (768px+) */
+    @media (width >= 48rem) {
+        max-width: 48rem;
+        padding:  15px 2rem 0 2rem;
+    }
+    
+    /* Large screens (1024px+) */
+    @media (width >= 64rem) {
+        max-width: 64rem;
+        padding:  15px 2rem 0 2rem;
+    }
+    
+    /* Extra large screens (1280px+) */
+    @media (width >= 80rem) {
+        max-width: 80rem;
+        padding:  20px 2rem 0 2rem;
+    }
+    
+    /* 2XL screens (1536px+) */
+    @media (width >= 96rem) {
+        max-width: 96rem;
+        padding: 20px 2rem 0 2rem;
+
+    }
+}
 
 @custom-variant dark (&:is(.dark *));
 
@@ -57,7 +94,8 @@
   --text-p: 16px;
   --text-span: 14px;
   --color-1: #242424;
-  --color-2: #333333
+  --color-2: #333333;
+  --color-3: #F6F6F6;
 
 
 }
