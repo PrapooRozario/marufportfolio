@@ -11,8 +11,8 @@ const Header = () => {
                 <Image alt="Maruf's Logo" src={Logo} width={80} height={80}/>
             </div>
             <div>
-                <Button variant='primary' text="Let's Talk" className='mr-4'>
-                </Button>
+
+                <Button variant='primary' text="যোগাযোগ করুন" className='mr-4' font='ador' />
             </div>
         </div>
     );
