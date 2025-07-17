@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 import { AnimatedShinyText } from "../magicui/animated-shiny-text";
 import Text from "./text";
-import { TextType } from "@/types/TextType";
+import { TagType } from "@/types/TagType";
 
 export const Tag = ({
   text,
@@ -10,14 +10,7 @@ export const Tag = ({
   textVariant = "p",
   textClassName,
   font
-}: {
-  text?: string;
-  icon?: React.ReactNode;
-  className?: string;
-  textVariant?: TextType["variant"];
-  textClassName?: string;
-  font?: TextType["font"];
-}) => {
+}: TagType) => {
   return (
     <div className={cn("px-4 py-2 text-center rounded-2xl w-fit", className)}>
       <AnimatedShinyText

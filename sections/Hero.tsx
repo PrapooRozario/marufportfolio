@@ -1,4 +1,3 @@
-import { BorderBeam } from "@/components/magicui/border-beam";
 import { Meteors } from "@/components/magicui/meteors";
 import Button from "@/components/ui/button";
 import { Tag } from "@/components/ui/tag";
@@ -15,7 +14,7 @@ import { socialMedia } from "@/data/socialmedia";
 
 const Hero = () => {
   return (
-    <div className="py-10 flex flex-col lg:flex-row justify-between gap-10 lg:gap-20">
+    <div className="pt-10 pb-20 flex flex-col lg:flex-row justify-between gap-10 lg:gap-20">
       {/* Text Section */}
       <div className="flex-1">
         <Tag
@@ -96,9 +95,7 @@ const Hero = () => {
               className="p-0 bg-[#e0f5ff]/80 backdrop-blur-xl"
               textClassName="text-[#2483cb] py-1.5 px-4 rounded-full text-lg font-medium"
             />
-          </div>
-          <BorderBeam size={150} />
-        </div>
+          </div>        </div>
 
         {/* Image */}
         <div className="col-span-1 sm:col-span-2 md:col-span-3 md:col-start-4 md:row-span-2 row-span-2 flex items-center justify-center">
