@@ -1,28 +1,27 @@
-import { Clapperboard, Music, Palette, Scissors } from "lucide-react";
 
 export const skills = [
     {
       title: "ভিডিও এডিটিং",
       description:
         "আমি একজন প্যাশনেট ভিডিও এডিটর, যিনি প্রোফেশনাল কাট, ট্রানজিশন, কালার গ্রেডিং, এবং মিউজিক সিঙ্কের মাধ্যমে সাধারণ ফুটেজকে অসাধারণ গল্পে রূপান্তর করি।",
-      icon: Clapperboard,
+      icon: "clapperboard",
     },
     {
       title: "কালার গ্রেডিং",
       description:
         "ভিডিওর ভিজ্যুয়াল টোন এবং মুড তৈরিতে এক্সপার্ট কালার গ্রেডিং করি – যা স্ক্রোল থামাতে বাধ্য করে।",
-      icon: Palette,
+      icon: "palette",
     },
     {
       title: "মিউজিক সিঙ্ক",
       description:
         "সাউন্ড অনুযায়ী ভিডিও কাট ও এফেক্ট যুক্ত করি, যাতে ইমোশন ও মেসেজ আরও শক্তিশালী হয়।",
-      icon: Music,
+      icon: "music",
     },
     {
       title: "স্মার্ট কাটিং",
       description:
         "জরুরি মুহূর্ত ধরে রেখে অপ্রয়োজনীয় ক্লিপ সরিয়ে নিখুঁত টাইমলাইন গঠন করি।",
-      icon: Scissors,
+      icon: "scissors",
     },
   ];

@@ -1,6 +1,5 @@
 import { ButtonType } from "@/types/ButtonType";
 import { Inter } from "next/font/google";
-import { BorderBeam } from "../magicui/border-beam";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,12 +16,13 @@ const Button = ({ text, className, variant, font, icon }: ButtonType) => {
     } ${icon ? "flex items-center gap-2" : ""}`,
   };
   return variant === "animated" ? (
-    <button className={`${variantClass[variant]} ${className}`}>
-      {text}
-      <BorderBeam />
-    </button>
+      <button className={`${variantClass[variant]} ${className}`}>
+        {text}
+      </button>
   ) : (
-    <button className={`${variantClass[variant]} ${className}`}>{text} {icon}</button>
+    <button className={`${variantClass[variant]} ${className}`}>
+      {text} {icon}
+    </button>
   );
 };
 
