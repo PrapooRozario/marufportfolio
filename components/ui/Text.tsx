@@ -24,6 +24,9 @@ const Text = ({ className, variant, children, font = "ador" }: TextType) => {
     span: `text-[12px] sm:text-[13px] md:text-span ${
       font === "ador" ? "font-ador" : inter.className
     }`,
+    xs: `text-[12px] ${
+      font === "ador" ? "font-ador" : inter.className
+    }`,
   };
 
   const Tag = variant ? variant : "p";
