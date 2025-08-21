@@ -24,9 +24,12 @@ const Text = ({ className, variant, children, font = "ador" }: TextType) => {
     span: `text-[12px] sm:text-[13px] md:text-span ${
       font === "ador" ? "font-ador" : inter.className
     }`,
+    xs: `text-[12px] ${
+      font === "ador" ? "font-ador" : inter.className
+    }`,
   };
 
-  const Tag = variant ? variant : "p";
+  const Tag = variant ? variant || variant == "xs" ? "p" : "p" : "p";
   const classes: string = `${variantClass[variant ?? "p"]} ${className || ""}`;
 
   return <Tag className={classes}>{children}</Tag>;

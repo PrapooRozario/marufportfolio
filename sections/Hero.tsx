@@ -60,16 +60,17 @@ const colors = [
               variant="primary"
               text="আরও জানুন"
               font="ador"
-              className="px-8 py-3"
+              className="px-8 py-3
+              *"
               icon={<ArrowRight size={16} />}
             />
           </div>
 
           {/* Grid Section */}
           <div className="w-full lg:flex-1 lg:max-w-2xl">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-4 lg:gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-4">
               {/* Profile Card */}
-              <div className="relative backdrop-blur-3xl p-6 flex flex-col justify-between bg-3 rounded-3xl overflow-hidden col-span-1 sm:col-span-1 lg:col-span-3 min-h-[280px] lg:min-h-[320px]">
+              <div className="relative backdrop-blur-3xl p-6 flex flex-col justify-between bg-3 rounded-3xl overflow-hidden col-span-1 sm:col-span-1 lg:col-span-3">
                 <div className="flex flex-col gap-4">
                   <div>
                     <Text variant="h3" className="font-semibold mb-1">
@@ -126,14 +127,14 @@ const colors = [
                     src={Maruf}
                     width={400}
                     height={400}
-                    className="rounded-3xl w-full h-auto object-cover aspect-square lg:aspect-[4/5] max-h-80 lg:max-h-[320px]"
+                    className="rounded-3xl w-full h-auto object-cover max-h-[320px]"
                     priority
                   />
                 </div>
               </div>
 
               {/* Brands Section */}
-              <div className="bg-6 rounded-3xl col-span-1 sm:col-span-2 lg:col-span-4 relative p-6 mt-4 lg:mt-4">
+              <div className="bg-6 rounded-3xl col-span-1 sm:col-span-2 lg:col-span-4 relative p-6">
                 <div className="mb-4">
                   <Text variant="h4" className="text-white leading-snug">
                     আমি আনন্দের সাথে কাজ করেছি এমন সাম্প্রতিকতম ব্র্যান্ডগুলি
@@ -161,7 +162,7 @@ const colors = [
               </div>
 
               {/* Social Media */}
-              <div className="col-span-1 sm:col-span-2 lg:col-span-2 mt-4 lg:mt-4">
+              <div className="col-span-1 sm:col-span-2 lg:col-span-2">
                 <div className="grid grid-cols-3 gap-3 sm:gap-4">
                   {socialMedia.map((item, idx) => {
                     const Icon = item.logo;

@@ -295,3 +295,8 @@
 [class*="animate-star-top"] {
   animation: star-movement-top 1s linear infinite alternate;
 }
+
+.contact-bg {
+background: #ffffff;
+background: linear-gradient(107deg, rgba(255, 255, 255, 1) 0%, rgba(176, 180, 252, 0.767) 91%,  rgb(227, 227, 255) 98%);
+}

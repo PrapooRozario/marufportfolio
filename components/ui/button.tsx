@@ -11,15 +11,11 @@ const Button = ({ text, className, variant, font, icon }: ButtonType) => {
     secondary: `bg-1 text-white hover:bg-1/90 rounded-xl py-3 text-span px-6 cursor-pointer ${
       font === "ador" ? "font-ador" : inter.className
     } ${icon ? "flex items-center gap-2" : ""}`,
-    animated: `bg-1 text-white hover:bg-1/90 rounded-xl py-3 text-span px-6 cursor-pointer relative ${
+    icon: ` text-span cursor-pointer ${
       font === "ador" ? "font-ador" : inter.className
     } ${icon ? "flex items-center gap-2" : ""}`,
-  };
-  return variant === "animated" ? (
-      <button className={`${variantClass[variant]} ${className}`}>
-        {text}
-      </button>
-  ) : (
+  }
+  return (
     <button className={`${variantClass[variant]} ${className}`}>
       {text} {icon}
     </button>

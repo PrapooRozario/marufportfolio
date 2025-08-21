@@ -1,3 +1,4 @@
+import Contact from "@/sections/contact";
 import Hero from "@/sections/Hero";
 import Skills from "@/sections/Skills";
 import Works from "@/sections/Works";
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <Skills />
       <Works />
+      <Contact/>
     </div>
   );
 }
